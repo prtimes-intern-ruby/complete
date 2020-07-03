@@ -2,6 +2,7 @@
   <%= link_to category.name, posts_category_path(name: category.name) %>
 <% end %>
 
+<<<<<<< Updated upstream
 <div id="main_post">
   <div class="large_width">
     <div class="post_rank">
@@ -34,6 +35,7 @@
                   </div>
                 <% end %>
               </li>
+              <div class="rank_less">
               <% n += 1 %>
             <% else %>
               <li class="rank_less_list a_hover">
@@ -61,6 +63,7 @@
               </li>
             <% end %>
           <% end %>
+        </div>
         </div>          
       </ul>
     </div>
@@ -126,6 +129,10 @@
         <% end %>
       </ul>
     </div>
-    <%= link_to 'もっと新着上昇を見る', posts_path %>
+    <div class="link_look">
+      <%= link_to 'もっと新着上昇を見る', posts_path %>
+    </div>
   </div>
 </div>
+=======
+>>>>>>> Stashed changes

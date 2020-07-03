@@ -1,14 +1,22 @@
 <div id="post_show">
   <div class="large_width">
       <div class="post_show">
+        <div class="post_show_img">
           <%= image_tag @post.image_id%>
+        </div>
           <div class="post_show_text">
               <h2><%= @post.title %></h2>
               <div class="user_box">
-                  <%= link_to user_path(@post.user) do %>
-                    <%= attachment_image_tag(@post.user, :profile_image, :fill, 60, 60, fallback: "no-image-icon.jpg") %>
-                    <%= @post.user.name%>
-                  <% end %>
+                  <div class="show_pa_in">
+                    <%= link_to user_path(@post.user) do %>
+                      <div class="show_my_img">
+                        <%= attachment_image_tag(@post.user, :profile_image, :fill, 60, 60, fallback: "no-image-icon.jpg") %>
+                      </div>
+                      <div class="show_user_name">
+                        <%= @post.user.name%>
+                      </div>
+                    <% end %>
+                  </div>
                   <div class="post_edit_box">
                     <% if @post.user == current_user %>
                       <span class=<%= "favorite-" + @post.id.to_s %>>

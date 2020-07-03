@@ -91,9 +91,13 @@ h2 {
   display: flex;
 }
 
+#follow_line .look_card a {
+  width: 60%;
+}
+
 #follow_line .look_card .post_img {
-  width: 50%;
-  height: 230px;
+  width: 100%;
+  height: 330px;
   object-fit: cover;
 }
 
@@ -139,7 +143,7 @@ h2 {
   color: #fff;
 }
 
-#post_show .main_show_img {
+#post_show .post_show_img img {
   width: 100%;
   height: 480px;
   object-fit: cover;
@@ -153,8 +157,9 @@ h2 {
 #post_show h2 {
   font-size: 32px;
   font-weight: bold;
-  padding-bottom: 7px;
+  padding-bottom: 13px;
   border-bottom: solid 1px #ddd;
+  margin-bottom: 0;
 }
 
 #post_show .user_box {
@@ -165,14 +170,20 @@ h2 {
 }
 
 #post_show .show_pa_in {
-  display: flex;
   align-items: center;
-  padding: 20px 30px;
   width: 50%;
   border-right: solid 1px #ddd;
 }
 
-#post_show .show_my_img {
+#post_show .show_pa_in a {
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#post_show .show_my_img img {
   width: 85px;
   height: 85px;
   border-radius: 40px;
@@ -291,6 +302,10 @@ h2 {
     margin-right: 5px;
 }
 
+#main_post .user_introduction a:hover {
+  box-shadow: none;
+}
+
 #main_post .user_name {
     font-weight: bold;
     text-decoration: underline;
@@ -307,7 +322,7 @@ h2 {
 }
 
 #main_post .post_first .post_img {
-    height: 500px;
+    height: 504px;
 }
 
 #main_post .post_first .post_back {
@@ -321,11 +336,12 @@ h2 {
 }
 
 #main_post .rank_less {
-    width: 33%;
+    width: 34%;
 }
 
 #main_post .rank_less_list {
     margin-bottom: 5px;
+    height: 290px;
 }
 
 #main_post ul {
@@ -335,11 +351,34 @@ h2 {
     flex-wrap: wrap;
 }
 
+#main_post .link_look {
+  width: 280px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border: solid 1px #333;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 30px auto 20px;
+}
+
+#main_post .link_look a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#main_post .link_look a:hover {
+  box-shadow: none;
+  background-color: #333;
+  color: #fff;
+}
+
 
 
 /* 投稿一覧候補２ */
 #main_post .aaa_list {
-    width: 50%;
+  width: 50%;
 }
 
 #main_post .aaa .post_back {
@@ -356,4 +395,43 @@ h2 {
 
 #main_post .aaa .user_name {
     color: #fff;
+}
+
+#login .min_large {
+  margin-top: 50px;
+}
+
+.form-heading{
+  font-size: 35px;
+
+}
+ .news {
+   text-align: center;
+   padding: 0.5em 1em;
+   font-weight: bold;
+   border: solid 1px #ddd ;
+   width:100%;
+ }
+
+ .news input {
+    padding: 7px;
+    width: 280px;
+    margin: 10px 0 15px;
+    font-size: 18px;
+ }
+
+ .news input[type="submit"]{
+   font-size: 20px;
+   font-weight: bold;
+   transition: .4s;
+ } 
+
+ .news input[type="submit"]:hover{
+  background-color: #333;
+  color: #fff;
+} 
+
+.body {
+  margin-top: 0px;
+  width: 100%;
 }
